@@ -1,5 +1,9 @@
 /* 公共样式 */
-
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
 .my-header {
 	background: #2B3E45;
 }

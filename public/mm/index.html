@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="assets/mui/css/mui.min.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.min.css">
+    <script src="./assets/zepto/zepto.min.js"></script>
     <script src="assets/mui/js/mui.min.js"></script>
+    <script src="./js/base.js"></script>
     <title>Jogo</title>
 </head>
 <body>
@@ -41,7 +43,7 @@
                 </a>
                 <a class="mui-tab-item" href="user.html">
                     <span class="mui-icon mui-icon-person"></span>
-                    <span class="mui-tab-label">会员中心</span>
+                    <span class="mui-tab-label">个人中心</span>
                 </a>
             
             
@@ -109,7 +111,7 @@
                 <!-- 品牌 -->
                 <div class="brand">
                         <img src="images/title0.png" class="title">
-                        <ul>
+                        <ul class="mui-clearfix">
                             <li><a href="javascript:;"><img src="images/brand1.png" alt=""></a></li>
                             <li><a href="javascript:;"><img src="images/brand2.png" alt=""></a></li>
                             <li><a href="javascript:;"><img src="images/brand3.png" alt=""></a></li>
@@ -293,9 +295,14 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-            </div>
+
             <!-- 自动轮播引入 -->
 <script src="./js/gallery.js"></script>
+<script>
+mui('mui-bar-tab').on('tap','a',function(){
+    window.top.location.href=this.href;
+});
+
+</script>
 </body>
 </html>

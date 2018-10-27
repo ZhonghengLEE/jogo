@@ -3,4 +3,45 @@
   top: 44px;
   bottom: 50.4px;
   width: 100%;
+  background-color: #f5f5f5;
+}
+.my-comtent .category-left {
+  width: 80px;
+  height: 100%;
+  float: left;
+  position: relative;
+  background-color: #fff;
+}
+.my-comtent .category-left .links a {
+  display: block;
+  height: 45 px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 14px;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.my-comtent .category-left .links .active {
+  background-color: #f5f5f5;
+  border: 1px solid transparent;
+}
+.my-comtent .category-right {
+  height: 100%;
+  margin-left: 90px;
+  position: relative;
+  background-color: #fff;
+}
+.my-comtent .category-right .brand-list li {
+  width: 33.333%;
+  float: left;
+  list-style: none;
+}
+.my-comtent .category-right .brand-list li a {
+  display: block;
+}
+.my-comtent .category-right .brand-list li a img {
+  width: 100%;
+}
+.my-comtent .category-right .brand-list li a p {
+  text-align: center;
 }

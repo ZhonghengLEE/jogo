@@ -4,6 +4,10 @@ body{
   padding: 0;
   background-color: #fff;
 }
+.mui-comtent{
+  margin-top:44px;
+  margin-bottom: 50px;
+}
 .my-header {
 	background: #2B3E45;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,50 +9,98 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/category.css">
+    <script src="./assets/zepto/zepto.min.js"></script>
     <script src="assets/mui/js/mui.min.js"></script>
+    <script src="./assets/fontAwesome/css/font-awesome.min.css"></script>
+    <script src="assets/artTemplate/template-native.js"></script>
+    <script src="./js/category.js"></script>
+    <script src="./js/base.js"></script>
     <title>Jogo</title>
 </head>
+
 <body>
     <!-- 顶部 -->
-        <header class="mui-bar mui-bar-nav my-header">
-            <div class="mylogo">
-               <a href="javascript:;">
-                   <img src="./images/logo2.jpg" alt="">
-               </a>
+    <header class="mui-bar mui-bar-nav my-header">
+        <div class="mylogo">
+            <a href="javascript:;">
+                <img src="./images/logo2.jpg" alt="">
+            </a>
+        </div>
+        <h1 class="mui-title">
+            <div class="logo">
+                <img src="./images/logo1.jpg" alt="">
             </div>
-                <h1 class="mui-title">
-                    <div class="logo">
-                        <img src="./images/logo1.jpg" alt="">
+        </h1>
+        <a href="" class="mui-icon mui-icon-search mui-pull-right"></a>
+    </header>
+    <!-- 底部 -->
+    <nav class="mui-bar mui-bar-tab my-footer">
+        <a class="mui-tab-item mui-active" href="index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="category.html">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="cart.html">
+            <span class="mui-icon fa fa-shopping-cart"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="user.html">
+            <span class="mui-icon mui-icon-person"></span>
+            <span class="mui-tab-label">个人中心</span>
+        </a>
+
+
+    </nav>
+    <!-- 内容 -->
+    <div class="my-comtent">
+        <div class="category-left">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="links">
+
                     </div>
-                </h1>
-                <a href="" class="mui-icon mui-icon-search mui-pull-right"></a>
-            </header>
-            <!-- 底部 -->
-            <nav class="mui-bar mui-bar-tab my-footer">
-                <a class="mui-tab-item mui-active" href="index.html">
-                    <span class="mui-icon mui-icon-home"></span>
-                    <span class="mui-tab-label">首页</span>
-                </a>
-                <a class="mui-tab-item" href="category.html">
-                    <span class="mui-icon mui-icon-bars"></span>
-                    <span class="mui-tab-label">分类</span>
-                </a>
-                <a class="mui-tab-item" href="cart.html">
-                    <span class="mui-icon fa fa-shopping-cart"></span>
-                    <span class="mui-tab-label">购物车</span>
-                </a>
-                <a class="mui-tab-item" href="user.html">
-                    <span class="mui-icon mui-icon-person"></span>
-                    <span class="mui-tab-label">会员中心</span>
-                </a>
-            
-            
-            </nav>
-            <!-- 内容 -->
-            <div class="my-comtent">
-                1212121213131
-                <!-- <div class="category-left"></div>
-                <div class="category-right"></div> -->
+                </div>
             </div>
+        </div>
+        <div class="category-right">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="brand-list mui-clearfix">
+                        <ul>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 一级分类渲染 -->
+	<script id="category-first" type="text/template">
+		<% for(var i=0;i<result.length;i++){ %>
+			<a
+				href="#"
+				data-id="<%=result[i].id %>"><%=result[i].categoryName %></a>
+		<% } %>
+	</script>
+
+    <script id="category-second" type="text/template">
+		<% for(var i=0;i<rows.length;i++){ %>
+			<li>
+				<a href="#">
+					<img src="<%=rows[i].brandLogo %>">
+					<p><%=rows[i].brandName %></p>
+				</a>
+			</li>
+		<% } %>
+
+		<% if(!rows.length){ %>
+			<div class="noresult">暂无数据</div>
+		<% } %>
+	</script>
+
 </body>
+
 </html>

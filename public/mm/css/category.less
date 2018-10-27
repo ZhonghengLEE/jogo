@@ -3,4 +3,57 @@
      top: 44px;
      bottom: 50.4px;
      width: 100%;
+     background-color: #f5f5f5;
+
+    //  左侧滚动栏样式
+    .category-left{
+        width: 80px;
+        height: 100%;
+        float: left;
+        position: relative;
+        background-color: #fff;
+        .links{
+             a{
+                 display: block;
+                 height:45 px;
+                 line-height: 45px;
+                 text-align: center;
+                font-size: 14px;
+                 border-right: 1px solid #e0e0e0;
+                 border-bottom:1px solid #e0e0e0;
+             }
+             .active{
+                 background-color: #f5f5f5;
+                 border:1px solid transparent;
+             }
+        }
+    }
+
+    // 右侧滚动栏样式
+    .category-right{
+        height: 100%;
+        margin-left: 90px;
+        position: relative;
+        background-color: #fff;
+
+        .brand-list{
+            
+
+            li{
+                width: 33.333%;
+                float: left;
+                list-style: none;
+                a{
+                    display: block;
+                    img{
+                        width: 100%;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                }
+            }
+
+        }
+    }
  }

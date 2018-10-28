@@ -1,0 +1,41 @@
+.comteiner {
+  padding: 10px;
+}
+.comteiner .search {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #2B3E45;
+  position: relative;
+  margin-bottom: 15px;
+}
+.comteiner .search input:first-of-type {
+  width: 100%;
+  height: 30px;
+  padding-right: 70px;
+  border: none;
+  background: none;
+  margin: 0;
+  font-size: 14px;
+}
+.comteiner .search input:last-of-type {
+  width: 60px;
+  height: 100%;
+  background-color: #2B3E45;
+  color: #fff;
+  border: none;
+  position: absolute;
+  right: -1px;
+  top: 0;
+  border-radius: 0;
+}
+.comteiner .history-top {
+  color: #8f8f94;
+  font-size: 14px;
+}
+.comteiner .history-top .clear {
+  font-size: 14px;
+  line-height: normal;
+}
+.comteiner .history-top .mui-icon-trash:before {
+  margin-right: 4px;
+}
